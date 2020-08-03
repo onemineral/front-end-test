@@ -114,10 +114,25 @@ export default {
 <style lang="scss" scoped>
 #caroussel {
   height: 566px;
-  width: 1253px;
+  max-width: 1253px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 1399px) {
+    max-height: 960px;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-height: 960px;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 599px) {
+    max-height: 640px;
+  }
 
   .arrow {
     cursor: pointer;
@@ -136,10 +151,21 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 60px;
+
+    @media screen and (max-width: 1399px) {
+      height: 100%;
+    }
 
     .items {
-      width: 1037px;
-      height: 492px;
+      max-width: 1037px;
+      width: 100%;
+      max-height: 492px;
+      height: 100%;
+
+      @media screen and (max-width: 1399px) {
+        max-height: 1180px;
+      }
 
       .item {
         width: 100%;
@@ -150,25 +176,47 @@ export default {
         pointer-events: none;
         transition: 0.5s;
 
+        @media screen and (max-width: 1399px) {
+          display: flex;
+          flex-direction: column-reverse;
+          height: 90%;
+          align-items: center;
+        }
+
         &.active {
           opacity: 1;
           pointer-events: all;
         }
 
         .copy {
-          height: 456px;
-          width: 426px;
+          max-height: 456px;
+          max-width: 426px;
+          width: 100%;
+          height: 100%;
           position: absolute;
           top: 35px;
           right: 0;
           z-index: -1;
+          background-repeat: no-repeat;
+          background-size: contain;
+
+          @media screen and (max-width: 1399px) {
+            position: relative;
+            top: 0;
+            background-image: none !important;
+          }
 
           .top {
             width: 100%;
-            height: 395px;
+            max-height: 395px;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @media screen and (max-width: 767px) {
+              max-height: 260px;
+            }
 
             .theme {
               color: #25ba06;
@@ -181,7 +229,7 @@ export default {
             }
 
             .title {
-              width: 234px;
+              max-width: 234px;
               height: 72px;
               font-family: "SC-Med";
               font-size: 32px;
@@ -190,10 +238,14 @@ export default {
               line-height: 36px;
               text-align: center;
               margin-top: 69px;
+
+              @media screen and (max-width: 767px) {
+                margin-top: 9px;
+              }
             }
 
             .text {
-              width: 272px;
+              max-width: 272px;
               font-family: "A-Reg";
               font-size: 16px;
               letter-spacing: 0;
@@ -205,12 +257,17 @@ export default {
 
           .cta {
             width: 100%;
-            height: 61px;
+            max-height: 61px;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             transition: 0.5s;
+
+            @media screen and (max-width: 1399px) {
+              max-height: 49px;
+            }
 
             &:hover {
               .txt {
@@ -227,8 +284,10 @@ export default {
         }
 
         .img {
-          width: 639px;
-          height: 479px;
+          max-width: 639px;
+          max-height: 479px;
+          width: 100%;
+          height: 100%;
           background-size: cover;
         }
       }

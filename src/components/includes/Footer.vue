@@ -46,6 +46,10 @@ footer {
   display: flex;
   align-items: flex-end;
 
+  @media screen and (max-width: 767px) {
+    height: 326px;
+  }
+
   .footer-container {
     display: flex;
     align-items: center;
@@ -53,17 +57,48 @@ footer {
     width: 100%;
     margin: 20px 39px;
 
+    @media screen and (max-width: 767px) {
+      height: 100%;
+      flex-direction: column;
+      margin: 0;
+    }
+
     .item {
       width: 33%;
       display: flex;
       justify-content: center;
 
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        height: 33%;
+        align-items: center;
+        justify-content: center;
+      }
+
       &:nth-of-type(1) {
         justify-content: flex-start;
+
+        @media screen and (max-width: 767px) {
+          justify-content: center;
+        }
+      }
+
+      &:nth-of-type(2) {
+        #links {
+          @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+          }
+        }
       }
 
       &:nth-of-type(3) {
         justify-content: flex-end;
+
+        @media screen and (max-width: 767px) {
+          justify-content: center;
+        }
       }
 
       #logo {
@@ -117,6 +152,7 @@ footer {
       #copyright {
         color: #fff;
         font-family: "A-SBold";
+        text-align: right;
       }
     }
   }

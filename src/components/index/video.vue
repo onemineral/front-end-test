@@ -10,7 +10,7 @@
         ></div>
         <div
           class="pause btn"
-          :class="{'playing': !playing}"
+          :class="{'playing': playing}"
           :style="{'background-image': 'url(' + pause + ')'}"
           @click="pauseVideo()"
         ></div>
@@ -92,7 +92,8 @@ export default {
 
 <style lang="scss" scoped>
 #video-container {
-  width: 1253px;
+  max-width: 1253px;
+  width: 100%;
   height: 836px;
   display: flex;
   align-items: center;
@@ -100,9 +101,10 @@ export default {
   &.fullscreen {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     z-index: 99999;
+    max-width: 100%;
 
     .video {
       width: 100%;
@@ -122,8 +124,10 @@ export default {
     position: relative;
 
     .main-btn {
-      width: 303px;
-      height: 303px;
+      max-width: 303px;
+      max-height: 303px;
+      width: 100%;
+      height: 100%;
       cursor: pointer;
       position: absolute;
       top: 50%;
@@ -134,12 +138,36 @@ export default {
         width: 100%;
         height: 100%;
         position: absolute;
-        opacity: 1;
-        pointer-events: all;
+        transition: 0.5s;
 
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .play {
+        opacity: 0.5;
+        pointer-events: all;
         &.playing {
           opacity: 0;
           pointer-events: none;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .pause {
+        opacity: 0;
+        pointer-events: none;
+        &.playing {
+          opacity: 0.5;
+          pointer-events: all;
+        }
+
+        &:hover {
+          opacity: 1;
         }
       }
     }
@@ -164,13 +192,15 @@ export default {
       .time-bar {
         box-sizing: border-box;
         height: 3px;
-        width: 1059px;
+        max-width: 1059px;
+        width: 100%;
         background-color: rgba(255, 255, 255, 0.25);
 
         .elapsed {
           box-sizing: border-box;
           height: 3px;
-          width: 469px;
+          max-width: 469px;
+          width: 100%;
           background-color: #fff;
         }
       }
@@ -182,6 +212,12 @@ export default {
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
+        opacity: 0.5;
+        transition: 0.5s;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }

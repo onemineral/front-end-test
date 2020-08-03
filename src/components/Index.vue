@@ -41,10 +41,20 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 80px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 599px) {
+    padding: 0 20px;
+  }
 
   #causes-container {
     height: 913px;
-    width: 1253px;
+    max-width: 1253px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,9 +62,19 @@ export default {
     margin-top: 87px;
     margin-bottom: 159px;
 
+    @media screen and (max-width: 1399px) {
+      height: 1300px;
+    }
+
+    @media screen and (max-width: 599px) {
+      height: 1000px;
+      margin-top: 40px;
+    }
+
     .copy {
       font-family: "SC-Reg";
-      width: 613px;
+      max-width: 613px;
+      width: 100%;
       height: 80px;
       font-size: 32px;
       text-align: center;
