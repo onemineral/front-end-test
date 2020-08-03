@@ -2,6 +2,16 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  background-color: var(--white);
-  padding: 11px 0;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  height: 705px;
+  width: min(1253px, 100%);
+  padding: 0 93px;
+  background: black;
+  opacity: 1;
 `;

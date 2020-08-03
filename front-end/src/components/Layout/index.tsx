@@ -1,22 +1,20 @@
 import React from 'react';
 
-import { Grid } from './styles';
+import { Container } from './styles';
 
 import Header from '../Header';
 import Video from '../Video';
-import SlideTitle from '../SlideTitle';
-import Slide from '../Slide';
+import Info from '../Info';
 import Footer from '../Footer';
 
 const Layout: React.FC = () => {
   return (
-    <Grid>
+    <Container>
       <Header />
       <Video />
-      <SlideTitle />
-      <Slide />
+      <Info />
       <Footer />
-    </Grid>
+    </Container>
   );
 };
 

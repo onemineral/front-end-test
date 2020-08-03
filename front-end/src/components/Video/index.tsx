@@ -1,10 +1,14 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Wrapper } from './styles';
 
 const Video: React.FC = () => {
   return (
-    <Container>Video</Container>
+    <Container>
+      <Wrapper>
+        test
+      </Wrapper>
+    </Container>
   );
 }
 
