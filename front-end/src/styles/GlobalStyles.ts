@@ -5,12 +5,12 @@ import merriweatherBold from './../assets/fonts/merriweather/Merriweather-Bold.t
 
 export default createGlobalStyle`
   @font-face {
-    font-family: "merriweather-regular";
+    font-family: "merriweather";
     font-style: normal;
     src: url("${merriweatherRegular}");
   }
   @font-face {
-    font-family: "merriweather-bold";
+    font-family: "merriweather";
     font-style: bold;
     src: url("${merriweatherBold}");
   }
@@ -28,13 +28,8 @@ export default createGlobalStyle`
     font-family: 'merriweather-regular', sans-serif;
   }
   :root {
-    --primary: #36393f;
-    --secondary: #2f3136;
-    --tertiary: rgb(32,34,37);
-    --quaternary: #292b2f;
-    --quinary: #393d42;
-    --senary: #828386;
-    
+    --background: #FFFFFF 0% 0% no-repeat padding-box;
+    --black: #2E2B30;
     --white: #fff;
     --gray: #8a8c90;
   }
