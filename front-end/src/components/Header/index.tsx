@@ -5,7 +5,7 @@ import { Container, Title } from './styles';
 const Header: React.FC = () => {
   return (
     <Container>
-      <Title>Brathtaking beauty</Title>
+      <Title>Breathtaking beauty</Title>
     </Container>
   );
 }

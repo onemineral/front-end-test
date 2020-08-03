@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   height: 705px;
-  width: min(1253px, 100%);
+  width: min(1253px, 90%);
   padding: 0 93px;
   background: black;
   opacity: 1;
