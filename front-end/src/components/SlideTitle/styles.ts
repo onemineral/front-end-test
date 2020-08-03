@@ -17,8 +17,9 @@ export const Text = styled.div`
   margin-top: 32px;
   margin-bottom: 30px;
 
-  @media(max-width: 500px) {
-    font: 18px/24px trajan-pro-3;
+  @media(max-width: 768px) {
+    font: 20px/26px trajan-pro-3;
+    margin-bottom: 0px;
   }
 `;
 

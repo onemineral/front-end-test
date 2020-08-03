@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 96px 0;
 
-  @media(max-width: 500px) {
+  @media(max-width: 768px) {
     padding: 48px 0;
   }
 `;
@@ -18,7 +18,7 @@ export const Title = styled.div`
   color: var(--black);
   opacity: 1;
 
-  @media(max-width: 500px) {
+  @media(max-width: 768px) {
     font: Bold 40px/40px Merriweather;
   }
 `

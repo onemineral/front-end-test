@@ -5,4 +5,5 @@ export const Container = styled.div`
   background-color: var(--black);
   height: 566px;
   width: min(1253px, 90%);
+  margin-bottom: 110px;
 `;

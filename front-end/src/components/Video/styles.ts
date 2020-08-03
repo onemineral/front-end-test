@@ -5,6 +5,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 120px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 60px;
+  }
 `;
 
 export const Wrapper = styled.div`
