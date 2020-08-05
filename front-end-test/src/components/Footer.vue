@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- footer -->
     <v-img
       min-width="100"
       :src="require('@/assets/footer.png')"
