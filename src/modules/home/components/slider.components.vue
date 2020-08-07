@@ -65,7 +65,7 @@ import RightSvg from "@/assets/svg/right.svg";
 })
 export default class Slider extends Vue {
   @Prop()
-  sliders: SlideModel[];
+  sliders!: SlideModel[];
 
   activeSlide = 1;
 
