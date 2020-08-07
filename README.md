@@ -1,14 +1,29 @@
-# Welcome
+# project
 
-In this repository you will find a landing page design (`Front End Dev Test.sketch`). It can be opened in [Sketch](https://www.sketch.com/) or [Figma](https://www.figma.com).
+## Project setup
+```
+yarn install
+```
 
-## To do
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
 
-* Fork this repository
-* Implement the design
-* Create a pull request with the completed implementation
+### Compiles and minifies for production
+```
+yarn run build
+```
 
-You can use any library you see fit in order to implement the design, with respect to the choice of technologies required for the test (which should be in the email received).
+### Run your tests
+```
+yarn run test
+```
 
-### Note:
-The design includes a "video player". It is not required to be a functional video player, but the interactions should be present. That means hover states, controls changing state, etc.
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
