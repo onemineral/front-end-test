@@ -18,6 +18,10 @@ export const Title = styled.div`
   color: var(--black);
   opacity: 1;
 
+  @media(max-width: 1280px) {
+    font: Bold 60px/60px Merriweather;
+  }
+
   @media(max-width: 768px) {
     font: Bold 40px/40px Merriweather;
   }

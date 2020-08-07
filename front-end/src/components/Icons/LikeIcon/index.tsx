@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Icon } from "./styles";
-
 const LikeIcon: React.FC = () => {
   return (
     <svg
@@ -18,8 +16,6 @@ const LikeIcon: React.FC = () => {
           transform="translate(14 13)"
           fill="none"
           stroke="#2e2b30"
-          stroke-miterlimit="10"
-          stroke-width="2"
         />
         <path
           id="Stroke_3"
@@ -27,8 +23,6 @@ const LikeIcon: React.FC = () => {
           d="M16.679,45.656,6.233,35.285A21.17,21.17,0,0,1,0,20.125,20.072,20.072,0,0,1,19.972,0,19.744,19.744,0,0,1,31,3.356,19.75,19.75,0,0,1,42.028,0,20.071,20.071,0,0,1,62,20.125a21.236,21.236,0,0,1-6.3,15.229L34.93,56"
           fill="none"
           stroke="#2e2b30"
-          stroke-miterlimit="10"
-          stroke-width="2"
         />
       </g>
     </svg>

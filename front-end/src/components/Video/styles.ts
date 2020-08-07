@@ -1,21 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 120px;
-
-  @media(max-width: 768px) {
-    margin-bottom: 60px;
-  }
-`;
-
-export const Wrapper = styled.div`
-  display: flex;
-  height: 705px;
   width: min(1253px, 90%);
-  padding: 0 93px;
-  background: black;
-  opacity: 1;
+  margin: 0px auto;
+  margin-bottom: 62px;
 `;
+
+

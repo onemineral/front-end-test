@@ -5,5 +5,6 @@ export const Container = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   height: 476px;
-  opacity: 1
+  display: flex;
+  justify-content: space-around;
 `;
