@@ -89,18 +89,18 @@ export default class App extends Vue {
   // general style for each line
   &:before,
   &:after
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 50%;
+    content ""
+    position absolute
+    width 2px
+    height 50%
 
   // first line
   &:before
-    top: 0;
-    background-color: var(--primary-color);
+    top 0
+    background-color var(--primary-color)
 
   // second line
   &:after
-    bottom: 0;
-    background-color: #807a90;
+    bottom 0
+    background-color #807a90
 </style>

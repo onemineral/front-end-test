@@ -11,10 +11,9 @@ export default class extends Mixins(TitlesMixin) {}
 </script>
 
 <style lang="stylus" scoped>
-.title {
-  font-size: 8rem;
-  text-align: center;
-  color: var(--primary-color);
-  margin: 0;
-}
+.title
+  font-size 8rem
+  text-align center
+  color var(--primary-color)
+  margin 0
 </style>

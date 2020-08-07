@@ -1,29 +1,26 @@
-# project
+# LandingPage
 
-## Project setup
+### Challenge
+
+![Test Image 1](./public/img.png)
+
+### Technology
+
 ```
-yarn install
+- Vue js
+- Typescript
+- Decorators
+- Scss, css in javascript, Stylus-lang
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-yarn run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
-```
-yarn run build
-```
 
-### Run your tests
 ```
-yarn run test
+yarn build
 ```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
