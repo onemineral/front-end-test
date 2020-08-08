@@ -4,23 +4,23 @@ import "./styles.scss";
 
 const Footerlinks: React.FC = () => {
   return (
-    <div className="footerLinks-Container">
+    <div className="footerLinks__container">
       <Router>
-        <div className="footerLinks-Wrapper">
+        <div className="footerLinks__wrapper">
           <div></div>
           <>
             <Link to="/about" style={{ textDecoration: "none" }}>
-              <div className="footerLinks-Anchor">About</div>
+              <div className="footerLinks__anchor">About</div>
             </Link>
             <Link to="/contact" style={{ textDecoration: "none" }}>
-              <div className="footerLinks-Anchor">Contact</div>
+              <div className="footerLinks__anchor">Contact</div>
             </Link>
             <Link to="/legal" style={{ textDecoration: "none" }}>
-              <div className="footerLinks-Anchor">Legal</div>
+              <div className="footerLinks__anchor">Legal</div>
             </Link>
           </>
 
-          <div className="footerLinks-Text">
+          <div className="footerLinks__text">
             Copyright © 2019 Site.com. All rights reserved.{" "}
           </div>
         </div>

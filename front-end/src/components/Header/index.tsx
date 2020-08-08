@@ -3,8 +3,8 @@ import './styles.scss'
 
 const Header: React.FC = () => {
   return (
-    <div className="header-Container">
-      <div className="header-Title">Breathtaking beauty</div>
+    <div className="header__container">
+      <div className="header__title">Breathtaking beauty</div>
     </div>
   );
 }

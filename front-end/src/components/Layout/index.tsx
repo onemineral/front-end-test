@@ -9,7 +9,7 @@ import Footer from '../Footer';
 
 const Layout: React.FC = () => {
   return (
-    <div className="app-Container">
+    <div className="app__container">
       <Header />
       <Video />
       <Info />

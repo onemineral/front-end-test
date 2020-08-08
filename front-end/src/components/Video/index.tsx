@@ -18,7 +18,7 @@ const Video: React.FC = () => {
   } as VideoInterface);
 
   return (
-    <div className="video-Container">
+    <div className="video__container">
       <VideoPlayer video={video.qualities} title={video.title} />
     </div>
   );

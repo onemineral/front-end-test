@@ -6,10 +6,10 @@ import LikeIcon from '../LikeIcon';
 
 const SlideTitle: React.FC = () => {
   return (
-    <div className="slideItem-Container">
+    <div className="slideItem__container">
       <LikeIcon />
-      <div className="slideItem-Text">20% of your booking will support <br></br> these organisations</div>
-      <div className="slidItem-VerticalArrow" />
+      <div className="slideItem__text">20% of your booking will support <br></br> these organisations</div>
+      <div className="slidItem__verticalArrow" />
     </div>
   );
 }

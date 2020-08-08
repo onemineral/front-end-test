@@ -7,7 +7,7 @@ import './styles.scss'
 
 const Info: React.FC = () => {
   return (
-    <div className="info-Container">
+    <div className="info__container">
       <SlideTitle />
       <Slide />
     </div>

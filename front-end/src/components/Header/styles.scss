@@ -1,4 +1,4 @@
-.header-Container {
+.header__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
   }
 }
 
-.header-Title {
+.header__title {
   text-align: center;
   font: Bold 80px/80px Merriweather;
   letter-spacing: -2.08px;

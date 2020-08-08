@@ -1,10 +1,10 @@
-.slideItem-Container {
+.slideItem__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.slideItem-Text {
+.slideItem__text {
   font: 32px/44px trajan-pro-3;
   font-weight: 400;
   font-style: regular;
@@ -21,7 +21,7 @@
   }
 }
 
-.slidItem-VerticalArrow {
+.slidItem__verticalArrow {
   height: 109px;
   margin-bottom: 30px;
   border: 1px solid var(--black);

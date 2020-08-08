@@ -4,7 +4,7 @@ import './styles.scss'
 
 const Slide: React.FC = () => {
   return (
-    <div className="slide-Container">Slide</div>
+    <div className="slide__container">Slide</div>
   );
 }
 
