@@ -1,0 +1,38 @@
+body {
+  background-image: url("../img/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  background-color: white;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 8px;
+  }
+}

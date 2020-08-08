@@ -1,0 +1,8 @@
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-5.000000, -5.000000)">
+            <polygon id="Bounds" points="0 32 32 32 32 0 0 0"></polygon>
+            <path d="M21,19 L21,19.001 L27,19 L27,21 L21,21.001 L21,27 L19,27 L19,19 L21,19 Z M13,19 L13,21 L12.999,21 L13,27 L11,27 L10.999,21 L5,21 L5,19 L13,19 Z M21,5 L21,10.999 L27,11 L27,13 L21,12.999 L21,13 L19,13 L19,5 L21,5 Z M13,5 L12.999,11 L13,11 L13,13 L5,13 L5,11 L10.999,11 L11,5 L13,5 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
