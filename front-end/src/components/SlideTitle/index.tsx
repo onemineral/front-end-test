@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.scss';
 
-import LikeIcon from '../Icons/LikeIcon';
+import LikeIcon from '../LikeIcon';
 
 const SlideTitle: React.FC = () => {
   return (
