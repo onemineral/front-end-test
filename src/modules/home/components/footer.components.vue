@@ -43,4 +43,12 @@ export default class App extends Vue {}
           position absolute
           right 0
           padding-right 0px
+
+
+@media only screen and (max-width: 950px)
+  .footer--link
+    display block
+  .footer--link__right
+    position: relative;
+    width: 100%;
 </style>

@@ -152,6 +152,8 @@ export default class Slider extends Vue {
       font-size 1.6rem
 
     &--border
+      border-left: 2px solid var(--primary-color);
+
       &::after,
       &::before
         content ""
@@ -206,4 +208,8 @@ export default class Slider extends Vue {
           left -2px
           top -2px
           border-radius 10px
+
+@media only screen and (max-width: 1300px)
+  .slider--items--item
+    width: 110rem;
 </style>

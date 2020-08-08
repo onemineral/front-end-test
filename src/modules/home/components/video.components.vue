@@ -1,9 +1,9 @@
 <template>
   <section class="video text-center mt-100">
-    <div class="video__svg" v-if="isPlaying">
+    <div class="video__svg" v-if="isPlaying" @click="play()">
       <play-svg />
     </div>
-    <div class="video__svg" v-else>
+    <div class="video__svg" v-else @click="play()">
       <pause-svg />
     </div>
     <img class="m-auto" width="100%" :src="image" @click="play()" />
@@ -115,4 +115,9 @@ export default class App extends Vue {
             display block
         & .video__svg
              display block
+
+@media only screen and (max-width: 950px)
+  .video__svg
+      max-width 12rem
+      max-height  12rem
 </style>
