@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Container } from './styles';
+import './styles.scss'
 
 const Slide: React.FC = () => {
   return (
-    <Container>Slide</Container>
+    <div className="slide-Container">Slide</div>
   );
 }
 

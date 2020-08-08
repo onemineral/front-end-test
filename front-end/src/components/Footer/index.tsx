@@ -1,14 +1,15 @@
 import React from 'react';
+import './styles.scss'
 
 import Footerlinks from '../FooterLinks';
 import FooterOne from './../../assets/img/footer1.png';
-import { Container } from './styles';
+
 
 const Footer: React.FC = () => {
   return (
-    <Container style={{ backgroundImage:`url(${FooterOne})` }}>
+    <div style={{ backgroundImage:`url(${FooterOne})` }} className="footer-Container">
       <Footerlinks />
-    </Container>
+    </div>
   );
 }
 

@@ -1,27 +1,31 @@
 import React from "react";
-import {BrowserRouter as Router, Link} from 'react-router-dom'
-
-import { Container, Wrapper, Anchor, Text } from './styles';
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import "./styles.scss";
 
 const Footerlinks: React.FC = () => {
   return (
-    <Container>
+    <div className="footerLinks-Container">
       <Router>
-        <Wrapper>  
+        <div className="footerLinks-Wrapper">
           <div></div>
           <>
-            <Link to="/about" style={{ textDecoration: 'none' }}><Anchor>About</Anchor></Link>
-            <Link to="/contact" style={{ textDecoration: 'none' }}><Anchor>Contact</Anchor></Link>
-            <Link to="/legal"style={{ textDecoration: 'none' }}><Anchor>Legal</Anchor></Link>
-          </> 
+            <Link to="/about" style={{ textDecoration: "none" }}>
+              <div className="footerLinks-Anchor">About</div>
+            </Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <div className="footerLinks-Anchor">Contact</div>
+            </Link>
+            <Link to="/legal" style={{ textDecoration: "none" }}>
+              <div className="footerLinks-Anchor">Legal</div>
+            </Link>
+          </>
 
-          <Text>Copyright © 2019 Site.com. All rights reserved. </Text>
-        </Wrapper>
-
+          <div className="footerLinks-Text">
+            Copyright © 2019 Site.com. All rights reserved.{" "}
+          </div>
+        </div>
       </Router>
-
-    </Container>
+    </div>
   );
 };
 

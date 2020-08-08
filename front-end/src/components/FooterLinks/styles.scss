@@ -1,21 +1,18 @@
-import styled from 'styled-components'
-
-
-export const Container = styled.div`
+.footerLinks-Container {
   display: flex;
   flex-wrap: wrap;
-`
+}
 
-export const Wrapper = styled.div`
+.footerLinks-Wrapper {
   opacity: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   padding-bottom: 50px;
   flex: 1 1 30%; 
-`
+}
 
-export const Anchor = styled.div`
+.footerLinks-Anchor {
   display: flex;
   font-family: canada-type-gibson;
   font-size: 10px;
@@ -26,12 +23,8 @@ export const Anchor = styled.div`
   letter-spacing: 1px;
   color: var(--white);
   opacity: 1;
-`
+}
 
-export const Text = styled.div`
+.footerLinks-Text {
   font-size: 10px;
-`
-
-export const Router = styled.div`
-
-`
+}

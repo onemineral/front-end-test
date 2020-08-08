@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from './styles';
+import './styles.scss'
 
 import Header from '../Header';
 import Video from '../Video';
@@ -9,12 +9,12 @@ import Footer from '../Footer';
 
 const Layout: React.FC = () => {
   return (
-    <Container>
+    <div className="app-Container">
       <Header />
       <Video />
       <Info />
       <Footer />
-    </Container>
+    </div>
   );
 };
 

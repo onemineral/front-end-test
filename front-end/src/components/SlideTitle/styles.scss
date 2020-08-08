@@ -1,12 +1,10 @@
-import styled from "styled-components";
-
-export const Container = styled.div`
+.slideItem-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+}
 
-export const Text = styled.div`
+.slideItem-Text {
   font: 32px/44px trajan-pro-3;
   font-weight: 400;
   font-style: regular;
@@ -21,10 +19,11 @@ export const Text = styled.div`
     font: 20px/26px trajan-pro-3;
     margin-bottom: 0px;
   }
-`;
+}
 
-export const VerticalArrow = styled.div`
+.slidItem-VerticalArrow {
   height: 109px;
   margin-bottom: 30px;
   border: 1px solid var(--black);
-`;
+}
+

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Title } from './styles';
+import './styles.scss'
 
 const Header: React.FC = () => {
   return (
-    <Container>
-      <Title>Breathtaking beauty</Title>
-    </Container>
+    <div className="header-Container">
+      <div className="header-Title">Breathtaking beauty</div>
+    </div>
   );
 }
 

@@ -1,6 +1,4 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
+.header-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,9 +7,9 @@ export const Container = styled.div`
   @media(max-width: 768px) {
     padding: 48px 0;
   }
-`;
+}
 
-export const Title = styled.div`
+.header-Title {
   text-align: center;
   font: Bold 80px/80px Merriweather;
   letter-spacing: -2.08px;
@@ -25,4 +23,4 @@ export const Title = styled.div`
   @media(max-width: 768px) {
     font: Bold 40px/40px Merriweather;
   }
-`
+}

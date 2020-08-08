@@ -1,16 +1,16 @@
 import React from 'react';
 
-import { Container, Text, VerticalArrow } from './styles';
+import './styles.scss';
 
 import LikeIcon from '../Icons/LikeIcon';
 
 const SlideTitle: React.FC = () => {
   return (
-    <Container>
+    <div className="slideItem-Container">
       <LikeIcon />
-      <Text>20% of your booking will support <br></br> these organisations</Text>
-      <VerticalArrow />
-    </Container>
+      <div className="slideItem-Text">20% of your booking will support <br></br> these organisations</div>
+      <div className="slidItem-VerticalArrow" />
+    </div>
   );
 }
 
