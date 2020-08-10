@@ -4,28 +4,34 @@ import "./styles.scss";
 
 const Footerlinks: React.FC = () => {
   return (
-    <div className="footerLinks__container">
-      <Router>
-        <div className="footerLinks__wrapper">
-          <div></div>
-          <>
-            <Link to="/about" style={{ textDecoration: "none" }}>
-              <div className="footerLinks__anchor">About</div>
-            </Link>
-            <Link to="/contact" style={{ textDecoration: "none" }}>
-              <div className="footerLinks__anchor">Contact</div>
-            </Link>
-            <Link to="/legal" style={{ textDecoration: "none" }}>
-              <div className="footerLinks__anchor">Legal</div>
-            </Link>
-          </>
-
-          <div className="footerLinks__text">
-            Copyright © 2019 Site.com. All rights reserved.{" "}
-          </div>
+    <Router>
+      <div className="footerLinks__wrapper">
+        <div className="footerLinks__links">
+          <Link
+            className="footerLinks__anchor"
+            to="/about"
+          >
+            About
+          </Link>
+          <Link
+            className="footerLinks__anchor"
+            to="/contact"
+          >
+            Contact
+          </Link>
+          <Link
+            className="footerLinks__anchor"
+            to="/legal"
+          >
+            Legal
+          </Link>
         </div>
-      </Router>
-    </div>
+
+      <div className="footerLinks__text">
+        <strong>Copyright</strong> © 2019 Site.com. All rights <strong>reserved</strong>.
+      </div>
+      </div>
+    </Router>
   );
 };
 

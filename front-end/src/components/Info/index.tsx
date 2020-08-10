@@ -1,15 +1,15 @@
 import React from 'react';
 
-import SlideTitle from '../SlideTitle';
-import Slide from '../Slide';
+import InfoTitle from '../InfoTitle';
+import InfoBody from '../InfoBody';
 
 import './styles.scss'
 
 const Info: React.FC = () => {
   return (
     <div className="info__container">
-      <SlideTitle />
-      <Slide />
+      <InfoTitle />
+      <InfoBody />
     </div>
   );
 }

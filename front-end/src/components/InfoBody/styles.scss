@@ -1,0 +1,18 @@
+.slide__container {
+  display: flex;
+  margin-bottom: 110px;
+}
+
+.slide__image {
+  display: flex;
+  width: 639px;
+  height: 479px;
+}
+
+.slide__text {
+  display: flex;
+  border: 2px solid var(--black);
+  color: var(--black);
+  width: 425px;
+  height: 455px;
+}

@@ -154,17 +154,19 @@
 	bottom: 0;
 }
 .video__controls__lower {
-	color: var(--color-trans);
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-trans);
+
 }
 .video__controls__left {
 	display: flex;
-	flex-grow: 4;
+	flex-grow: 1;
 }
 .video__controls__right {
 	display: flex;
-	flex: auto;
 	align-items: center;
 }
 .video__scrub {
