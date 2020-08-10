@@ -5,7 +5,13 @@
   width: 100%;
   margin-top: auto;
   margin-bottom: 50px;
+  margin-right: 60px;
+  margin-left: 60px;
 
+  @media screen and (max-width: 920px) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   @media screen and (max-width: 480px) {
     margin-bottom: 10px;
   }
