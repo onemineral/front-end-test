@@ -38,7 +38,7 @@ const Slider = React.memo<Props>(
             <LeftArrow onClick={onPrevClick} className="navButtons" />
           )}
 
-          <ul className="list">
+          <ul>
             {visibleItems.map((slide: any) =>
               children ? children(slide) : null
             )}
