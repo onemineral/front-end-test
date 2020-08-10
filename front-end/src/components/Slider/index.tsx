@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dots  from "./components/Dots/Dots";
+import Dots  from "./components/Dots";
 import { ReactComponent as LeftArrow } from "./../../assets/icons/leftArrow.svg";
 import { ReactComponent as RightArrow } from "./../../assets/icons/rightArrow.svg";
 
@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Slider = React.memo<Props>(
-  ({ slides, children, visibleItemsNumber = 3 }) => {
+  ({ slides, children, visibleItemsNumber = 1 }) => {
     const [start, setStart] = useState(0);
 
     const isControlsVisible = slides.length > visibleItemsNumber;

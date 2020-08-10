@@ -1,16 +1,21 @@
 .slide__container {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 110px;
 }
 
 .slide__image {
-  display: flex;
+  position: relative;
   width: 639px;
   height: 479px;
+  z-index: 2;
 }
 
 .slide__text {
-  display: flex;
+  position: relative;
+  z-index: 1;
+  left: -20px;
+  top: 45px;
   border: 2px solid var(--black);
   color: var(--black);
   width: 425px;

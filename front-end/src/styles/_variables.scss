@@ -1,0 +1,18 @@
+:root {
+  --background: #FFFFFF 0% 0% no-repeat padding-box;
+  --black: #2E2B30;
+  --white: #fff;
+	--gray: #8a8c90;
+	
+	--color-white: hsl(0, 0%, 100%);
+	--color-trans: hsl(0, 0%, 100%, .25);
+	--color-black: hsl(0, 0%, 14%);
+	--color-black-transparent: hsla(0, 0%, 14%, .7);
+
+	--layout-gutter: 1rem;
+	--zindex-meta: 1;
+	--transition: all .2s ease-in-out;
+	--transition-slow: all .5s ease-in-out;
+	--scrubberSize: 16px;
+
+}
