@@ -9,8 +9,8 @@ type Props = {
 };
 
 const SlideText = React.memo<Props>(({ tag, title, text }) => {
-  let newText = text.split("\n").map((i) => {
-    return <p>{i}</p>;
+  let newText = text.split("\n").map((i, index) => {
+    return <p key={index}>{i}</p>;
   });
 
   return (

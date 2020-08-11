@@ -1,4 +1,4 @@
-import React, { useState, useRef, SyntheticEvent } from 'react';
+import React, { useState, useRef, useCallback, SyntheticEvent } from 'react';
 import {VideoQualityInterface} from '../../interfaces/VideoQualityInterface';
 import './styles.scss';
 
@@ -19,70 +19,90 @@ const VideoPlayer: React.FC<{video: VideoQualityInterface[], title?: string}> = 
 	const container = useRef<HTMLDivElement>(null);
 	const video = useRef<HTMLVideoElement>(null);
 
-	const play = () => {
-		video?.current?.play();
-	}
+	const play = useCallback(
+		() => {
+			video?.current?.play();
+		},
+		[],
+	);
 
+	const pause = useCallback(
+		() => {
+			video?.current?.pause();
+		},
+		[],
+	);
 
-	const pause = () => {
-		video?.current?.pause();
-	}
+	const adjustVolume = useCallback(
+		(vol: number) => {
+			if(video.current) video.current.volume = vol;
+			setVolume(vol);
+		},
+		[],
+	);
 
+	const toggleFullScreen = useCallback(
+		() => {
+			if (document.fullscreenElement !== null) {
+				document.exitFullscreen().then(() => setIsFullscreen(false));
+			} else {
+				if(container.current) container.current.requestFullscreen().then(() => setIsFullscreen(true));
+			}
+		},
+		[],
+	);
 
-	const adjustVolume = (vol: number) => {
-		if(video.current) video.current.volume = vol;
-		setVolume(vol);
-	};
+	const scrubHandler = useCallback(
+		(e: SyntheticEvent) => {
+			const {target} = e;
+			// @ts-ignore
+			const progress = target.value;
+			gotoTime(progress);
+		},
+		[],
+	);
 
+	const scrubHoverHandler = useCallback(
+		(e: SyntheticEvent) => {
+			const {target} = e;
+			// @ts-ignore
+			const clickX: number = e.pageX;
+			const targetLeft: number = (target as HTMLButtonElement).getBoundingClientRect().left;
+			const targetWidth: number = (target as HTMLButtonElement).getBoundingClientRect().width;
+			const progress: number = (clickX-targetLeft) / targetWidth; // 0-1
+			const newTime = duration * progress;
+			setPreviewTime(newTime);
+		},
+		[],
+	);
 
-	const toggleFullScreen = () => {
-		if (document.fullscreenElement !== null) {
-			document.exitFullscreen().then(() => setIsFullscreen(false));
-		} else {
-			if(container.current) container.current.requestFullscreen().then(() => setIsFullscreen(true));
-		}
-	};
+	const gotoTime = useCallback(
+		(time: number) => {
+			setCurrentTime(time);
+			// setTimeout() is required, or else video will be null when gotoTime() runs directly after having changed currentVideo, so video in turn always resets to time 0 when changing quality.
+			setTimeout(() => {
+				if(video.current) video.current.currentTime = time;
+			}, 50);
+		},
+		[],
+	);
 
+	const formatTime = useCallback(
+		(time: number) => {
+			const seconds = Math.floor(time % 60);
+			const minutes = Math.floor(time / 60 % 60);
+			const hours = Math.floor(time / 60 / 60 % 60);
+			return (
+				(hours ? hours : '') + 
+				(hours && minutes ? ':' : '') + 
+				minutes + 
+				':' + 
+				seconds.toString().padStart(2, '0')
+			);
+		},
+		[],
+	);
 
-	const scrubHandler = (e: SyntheticEvent) => {
-		const {target} = e;
-		// @ts-ignore
-		const progress = target.value;
-		gotoTime(progress);
-	}
-
-
-	const scrubHoverHandler = (e: SyntheticEvent) => {
-		const {target} = e;
-		// @ts-ignore
-		const clickX: number = e.pageX;
-		const targetLeft: number = (target as HTMLButtonElement).getBoundingClientRect().left;
-		const targetWidth: number = (target as HTMLButtonElement).getBoundingClientRect().width;
-		const progress: number = (clickX-targetLeft) / targetWidth; // 0-1
-		const newTime = duration * progress;
-		setPreviewTime(newTime);
-	}
-	const gotoTime = (time: number) => {
-		setCurrentTime(time);
-		// setTimeout() is required, or else video will be null when gotoTime() runs directly after having changed currentVideo, so video in turn always resets to time 0 when changing quality.
-		setTimeout(() => {
-			if(video.current) video.current.currentTime = time;
-		}, 50);
-	}
-
-
-	const formatTime = (time: number) => {
-		const seconds = Math.floor(time % 60);
-		const minutes = Math.floor(time / 60 % 60);
-		const hours = Math.floor(time / 60 / 60 % 60);
-		return (
-			(hours ? hours : '') + 
-			(hours && minutes ? ':' : '') + 
-			minutes + 
-			':' + 
-			seconds.toString().padStart(2, '0')
-		);
-	}
 
 	return (
 		<div className="video" ref={container}>
