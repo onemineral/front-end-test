@@ -1,0 +1,28 @@
+.slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+
+.navButtons {
+  width: 36px;
+  height: 36px;
+  margin: 0px 32px;
+  cursor: pointer;
+
+  @media (max-width: 1280px) {
+    margin: 0px 10px;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.dotsControls {
+  display: block;
+  text-align: center;
+}

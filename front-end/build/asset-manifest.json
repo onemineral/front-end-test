@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b25d22aa.chunk.css",
+    "main.js": "/static/js/main.781ffbdf.chunk.js",
+    "main.js.map": "/static/js/main.781ffbdf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83c3e0c4.js.map",
+    "static/js/2.683f8759.chunk.js": "/static/js/2.683f8759.chunk.js",
+    "static/js/2.683f8759.chunk.js.map": "/static/js/2.683f8759.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.23a970c754dc094525c6bb1bc5075c8a.js": "/precache-manifest.23a970c754dc094525c6bb1bc5075c8a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b25d22aa.chunk.css.map": "/static/css/main.b25d22aa.chunk.css.map",
+    "static/js/2.683f8759.chunk.js.LICENSE.txt": "/static/js/2.683f8759.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/Merriweather-Regular.c97a9fc2.ttf",
+    "static/media/footer1.png": "/static/media/footer1.b43aa97a.png",
+    "static/media/fullscreen.665c42a5.svg": "/static/media/fullscreen.665c42a5.svg",
+    "static/media/heart.b1945ec0.svg": "/static/media/heart.b1945ec0.svg",
+    "static/media/leftArrow.fbab85a8.svg": "/static/media/leftArrow.fbab85a8.svg",
+    "static/media/pause.9128f924.svg": "/static/media/pause.9128f924.svg",
+    "static/media/play.6a7e53fb.svg": "/static/media/play.6a7e53fb.svg",
+    "static/media/rightArrow.2812d444.svg": "/static/media/rightArrow.2812d444.svg",
+    "static/media/speaker.62e8507f.svg": "/static/media/speaker.62e8507f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83c3e0c4.js",
+    "static/js/2.683f8759.chunk.js",
+    "static/css/main.b25d22aa.chunk.css",
+    "static/js/main.781ffbdf.chunk.js"
+  ]
+}

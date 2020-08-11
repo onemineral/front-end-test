@@ -1,0 +1,18 @@
+.slide__image {
+  position: relative;
+  max-width: 639px;
+  height: 479px;
+  left: 10px;
+  
+  z-index: 2;
+
+  @media(max-width: 1280px) {
+    max-width: 383px;
+    height: 287px;
+    left: 5px;
+  }
+
+  @media (max-width: 768px) {
+    left: 0px;
+  }
+}
