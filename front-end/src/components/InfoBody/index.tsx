@@ -22,7 +22,7 @@ const slides = [
     tag: "The Environment",
     title: "Living Oceans",
     text:
-      "We help preserve, protect and restore\nthe world’s oceans and aquatic\nresources through research, education,\nand outreach.",
+      "We help preserve, protect and restore \n the world’s oceans and aquatic \n resources through research, education, \n and outreach.",
   },
   {
     id: "2",
@@ -31,16 +31,16 @@ const slides = [
     tag: "The Environment",
     title: "Coral Reef",
     text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "Lorem Ipsum is simply dummy text \n of the printing and typesetting industry. \n Lorem Ipsum standard.",
   },
   {
     id: "3",
     image:
       "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2c18c543-0b3d-463b-8940-f19853c7637c/d2n55fp-5d912a3f-7273-487f-a13c-e9e43378c6de.jpg/v1/fill/w_325,h_250,q_70,strp/m_i_a_m_i_p_a_l_m_s_by_aliwithaneye_d2n55fp-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjE1IiwicGF0aCI6IlwvZlwvMmMxOGM1NDMtMGIzZC00NjNiLTg5NDAtZjE5ODUzYzc2MzdjXC9kMm41NWZwLTVkOTEyYTNmLTcyNzMtNDg3Zi1hMTNjLWU5ZTQzMzc4YzZkZS5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Ow4xHgDxyfY2DRNmjcZDjVZ97BvA9tGQBn-pVepbgTk",
     tag: "The Environment",
-    title: "Island",
+    title: "Biomass",
     text:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+      "Contrary to popular belief, \n Lorem Ipsum is not simply random text. \n It has roots in a piece of classical \n Latin literature.",
   },
 ];
 
