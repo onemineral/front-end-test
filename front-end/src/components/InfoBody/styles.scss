@@ -2,4 +2,14 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 71px;
+  width: 100%;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 500px) {
+    margin-bottom: 20px;
+  }
 }
+

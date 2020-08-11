@@ -2,5 +2,12 @@
   position: relative;
   max-width: 639px;
   height: 479px;
+  
   z-index: 2;
+
+  @media(max-width: 1280px) {
+    max-width: 383px;
+    height: 287px;
+  }
+
 }

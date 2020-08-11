@@ -1,5 +1,7 @@
 import React, { useState, useRef, SyntheticEvent } from 'react';
 import {VideoQualityInterface} from '../../interfaces/VideoQualityInterface';
+
+import classnames from "classnames";
 import './styles.scss';
 
 import {ReactComponent as PlayIcon} from '../../assets/icons/play.svg';
@@ -101,7 +103,7 @@ const VideoPlayer: React.FC<{video: VideoQualityInterface[], title?: string}> = 
 			onKeyUp={e => [' ', 'Enter'].includes(e.key) ? isPlaying ? pause() : play() : null}>
 			</video>
 
-			<button className="video__statusIcon" aria-label="Play/pause video" onClick={isPlaying ? pause : play}>{isPlaying ? <PauseIcon/> : <PlayIcon/>}</button>
+			<button className="video__statusIcon" aria-label="Play/pause video" onClick={isPlaying ? pause : play}>{currentTime == 0 ? <PlayIcon /> : isPlaying ? <PauseIcon/> :  <PlayIcon /> }</button>
 
 			<div className="video__controls">
 

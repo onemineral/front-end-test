@@ -82,18 +82,15 @@
 	left: calc(50% - 50px);
 	filter: drop-shadow(2px 4px 6px var(--color-black));
 	z-index: var(--zindex-meta);
-	opacity: 0;
 	transition: var(--transition);
+	opacity: 0;
 }
 
 .video:hover .video__statusIcon,
 .video:focus .video__statusIcon {
-	opacity: .5;
-}
-
-.video .video__statusIcon:focus-within {
 	opacity: 1;
 }
+
 
 .video__statusIcon svg {
 	width: 100%;
