@@ -16,7 +16,7 @@ const Dots = React.memo<Props>(({ items, active, onClick }) => {
         <li
           key={dot}
           className={classnames("dot", {
-            ['active']: active === dot
+            ["active"]: active === dot
           })}
           onClick={() => onClick(dot)}
         />
