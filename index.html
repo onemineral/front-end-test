@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Diogo Ribeiro">
+  <meta name="description" content="One Mineral frontend test">
+  <title>Frontend test</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="javascript/client.js"></script>
+  <!-- Glide -->
+  <link rel="stylesheet" href="css/glide.core.min.css">
+  <link rel="stylesheet" href="css/glide.theme.min.css">
+</head>
+
+<body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <header id="header">
+    <div class="header_title">
+      <h1>Breathtaking beauty</h1>
+    </div>
+
+    <div class="header_video">
+      <img class="play-button" src="assets/play-button.png" onclick="playvideo();">
+      <img class="photo-video" src="assets/photo-video.png">
+      <div id="modal" class="modal">
+        <span class="close" onclick="cancelvideo();">&times;</span>
+        <video id="video" class="video" width="100%" heigth="" controls>
+          <source src="assets/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+    </div>
+
+  </header>
+
+  <div id="quote">
+    <div>
+      <img class="quote_heart" src="assets/heart.png">
+    </div>
+
+    <div>
+      <h2 class="quote_text">20% of your bookings will support these organisations</h2>
+    </div>
+
+    <div>
+      <img class="quote_line" src="assets/line.png">
+    </div>
+
+  </div>
+
+  <div id="carousel">
+
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="slide-1">
+              <img class="carousel_image-1" src="assets/image-1.png">
+              <div class="carousel_text-1">
+                <p class="center-text carousel_nav-text" style="margin-top: 40px;">The Environment</p>
+                <h3 class="center-text carousel_title-text" style="margin-top: 69px;">Living Oceans Foundation</h3>
+                <p class="center-text carousel_body-text" style="margin-top: 41px;">We help preserve, protect and restore the world's oceans and aquatic resources through research, aducation, and outreach</p>
+                <div style="margin-top: 80px; border-top: 1px solid black;"><h4 class="center-text carousel_btn-text" style="margin-top: 17px">FIND OUT MORE</h4></div>
+              </div>
+            </div>
+          </li>
+
+          <li class="glide__slide">
+            
+          </li>
+
+          <li class="glide__slide">
+
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+      </div>
+
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div id="footer">
+      <div class="menu">
+        <p class="footer_text" style="margin: 0 10px 0 10px">ABOUT</p>
+        <p class="footer_text" style="margin: 0 10px 0 10px">CONTACT</p>
+        <p class="footer_text" style="margin: 0 10px 0 10px">LEGAL</p>
+      </div>
+
+      <div class="copyright">
+        <p class="footer_text" style="margin: 0; letter-spacing: 0.06px;">Copyright © 2019 Site.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const config = {
+      type: 'carousel',
+      perView: 1
+    }
+    new Glide('.glide', config).mount()
+  </script>
+</body>
+
+</html>
