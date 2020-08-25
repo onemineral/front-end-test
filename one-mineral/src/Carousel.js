@@ -17,11 +17,14 @@ import dots3 from './assets/Dots3.png'
 
 //Slide Images
 import slide1 from './assets/Coral.png'
+import { CSSTransition } from 'react-transition-group'
 
 class Carousel extends Component {
 
     constructor() {
         super()
+
+        this.wrapper = React.createRef();
 
         this.state = {
             activeIndex: 0
@@ -35,18 +38,21 @@ class Carousel extends Component {
 
         this.items = [
             {
+                index: 0,
                 img: slide1,
                 subtitle: "The Environment",
                 title: "Living Oceans Fundation",
                 text: "We help preserve, protect and restore the world’s oceans and aquatic resources through research, education, and outreach."
             },
             {
+                index: 1,
                 img: slide1,
                 subtitle: "The Carousel",
                 title: "Slide Number Two",
                 text: "We help preserve, protect and restore the world’s oceans and aquatic resources through research, education, and outreach."
             },
             {
+                index: 2,
                 img: slide1,
                 subtitle: "The Slider",
                 title: "Slide Number Three",
@@ -94,6 +100,7 @@ class Carousel extends Component {
     }
 
     render() {
+        const {activeIndex} = this.state
         return (
             <div className="Carousel">
                 <img alt="heart" src={heart} />
@@ -107,7 +114,13 @@ class Carousel extends Component {
                             <img alt="leftArrow" src={leftArrow} onClick={() => this.goToPrevSlide()} />
                         </div>
                         <div className="slide">
-                            <Item item={this.items[this.state.activeIndex]} onTouchStart={() => this.goToNextSlide()} />
+                            <CSSTransition
+                                in={true}
+                                appear={true}
+                                timeout={300}
+                                classNames="fade">
+                                <Item item={this.items[activeIndex]} onTouchStart={() => this.goToNextSlide()} />
+                            </CSSTransition>
                         </div>
                         <div className="arrow">
                             <img alt="rightArrow" src={rightArrow} onClick={() => this.goToNextSlide()} />

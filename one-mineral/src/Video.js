@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 
+
 //Icons
 import play from './assets/Play.png'
 import pause from './assets/Pause.png'
@@ -18,7 +19,8 @@ class Video extends Component {
             video: 'start',
             volume: 'on',
             fullscreen: false,
-            hovering: false
+            hovering: false,
+            animate: false
         }
     }
 
