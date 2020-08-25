@@ -22,6 +22,10 @@
 	margin-top: 50px;
 	width: 70%;
 	margin-left: 15%;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .Video .video-container-fullscreen {
@@ -29,6 +33,10 @@
 	margin-top: 50px;
 	width: 90%;
 	margin-left: 5%;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .Video .video-screen {
@@ -56,7 +64,8 @@
 	width: 80%;
 	bottom: 5%;
 	left: 10%;
-	visibility: hidden;
+	opacity: 0;
+	transition: opacity 500ms linear;
 }
 
 .Video .time_bar {
@@ -244,42 +253,12 @@
 }
 
 .hidden {
-	visibility: hidden;
+	opacity: 0;
+	transition: opacity 200ms linear;
 }
 
 .none {
 	display: none;
-}
-
-/* appear - on page load */
-.fade-appear {
-    opacity: 0.5;
-    z-index: 1;
-}
-.fade-appear.fade-appear-active {
-  opacity: 1;
-  transition: opacity 300ms linear;
-}
-
-/* enter */
-.fade-enter {
-  opacity: 0;
-}
-.fade-enter.fade-enter-active {
-    opacity: 1;
-	transition: opacity 300ms linear 300ms;
-}
-
-/* exit */
-.fade-exit {
-	opacity: 1;
-}
-.fade-exit.fade-exit-active {
-    opacity: 0;
-	transition: opacity 300ms linear;
-}
-.fade-exit-done {
-  opacity: 0;
 }
 
 /* slide enter */

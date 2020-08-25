@@ -100,7 +100,7 @@ class Carousel extends Component {
     }
 
     render() {
-        const {activeIndex} = this.state
+        const { activeIndex } = this.state
         return (
             <div className="Carousel">
                 <img alt="heart" src={heart} />
@@ -114,13 +114,7 @@ class Carousel extends Component {
                             <img alt="leftArrow" src={leftArrow} onClick={() => this.goToPrevSlide()} />
                         </div>
                         <div className="slide">
-                            <CSSTransition
-                                in={true}
-                                appear={true}
-                                timeout={300}
-                                classNames="fade">
-                                <Item item={this.items[activeIndex]} onTouchStart={() => this.goToNextSlide()} />
-                            </CSSTransition>
+                            <Item item={this.items[activeIndex]} onTouchStart={() => this.goToNextSlide()} />
                         </div>
                         <div className="arrow">
                             <img alt="rightArrow" src={rightArrow} onClick={() => this.goToNextSlide()} />
