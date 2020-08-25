@@ -1,0 +1,396 @@
+.App {
+	position: relative;
+	text-align: center;
+}
+
+/*Video*/
+
+.Video {
+	position: relative;
+}
+
+.Video h1 {
+	margin-top: 50px;
+	margin-bottom: 80px;
+	font-size: 70px;
+	font-family: Tahoma;
+	font-weight: lighter;
+}
+
+.Video .video-container {
+	position: relative;
+	margin-top: 50px;
+	width: 70%;
+	margin-left: 15%;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.Video .video-container-fullscreen {
+	position: relative;
+	margin-top: 50px;
+	width: 90%;
+	margin-left: 5%;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.Video .video-screen {
+	position: relative;
+	width: 100%;
+	display:inline-block;
+}
+
+.Video .playButton {
+	position: absolute;
+	width: 20%;
+	left: 40%;
+	top: 35%;
+}
+
+.Video .control-bar {
+	position: absolute;
+	width: 80%;
+	bottom: 5%;
+	left: 10%;
+}
+
+.Video .control-bar-hidden {
+	position: absolute;
+	width: 80%;
+	bottom: 5%;
+	left: 10%;
+	opacity: 0;
+	transition: opacity 500ms linear;
+}
+
+.Video .time-bar {
+	width: 80%;
+	margin-bottom: 5px;
+	visibility: inherit;
+}
+
+.Video .fullscreen {
+	width: 20px;
+	margin-left: 5%;
+	visibility: inherit;
+}
+
+.Video .volume {
+	width: 27px;
+	margin-left: 1.5%;
+	visibility: inherit;
+}
+
+/*Carousel*/
+
+.Carousel {
+	width: 100%;
+	padding-top: 150px;
+	margin-bottom: 150px;
+}
+
+.Carousel .subtitle {
+	font-size: 35px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: 'Lucida Sans';
+	font-weight: lighter;
+}
+
+.Slide-Show {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	height: 500px;
+}
+
+.Slide-Show .slide {
+	width: 70%;
+}
+
+.Slide-Show .arrow {
+	width: 15%;
+	height: 500px;
+	position: relative;
+}
+
+.Slide-Show .arrow img {
+	position: relative;
+	height: 42px;
+	margin-top: 250px;
+}
+
+.Slide-Show .dots {
+	position: relative;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+.Item {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.Item .slide-container {
+	position: absolute;
+	width: 100%;
+	height: 550px;
+}
+
+.Item .img {
+	position: absolute;
+	height: 500px;
+	width: 60%;
+	z-index: 20;
+	left: 0px;
+	top: 1vw;
+	background-size: cover;
+}
+
+.Item .device {
+	min-height: 400px;
+	width: 40%;
+	position: absolute;
+	border: 1px solid black;
+	right: 15px;
+	bottom: 20px;
+	padding-top: 30px;
+	z-index: 10;
+}
+
+
+.Item .device div{
+	border-bottom: 1px solid black;
+}
+
+.Item .device div * {
+	margin: 20px 10% 50px 10%;
+}
+
+.Item .device h2 {
+	color: green;
+}
+
+.Item .device h1 {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.Item button {
+	border: none;
+    text-decoration: none;
+    background: none;
+	cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/*Footer*/
+
+.Footer {
+	position: relative;
+	width: 100%;
+}
+
+.Footer img {
+	width: 100%;
+}
+
+.Footer .text {
+	position: absolute;
+	width: 100%;
+	bottom: 60px;
+}
+
+.Footer .text .links {
+	position: absolute;
+	width: 50%;
+	left: 25%;
+}
+
+.Footer .text .links button {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	display: inline-block;
+    border: none;
+    text-decoration: none;
+    background: none;
+	cursor: pointer;
+	color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.Footer .text .links button:hover,
+.Footer .text .links button:focus {
+    background: none;
+}
+
+.Footer .text .links button:focus {
+    outline: none;
+}
+
+.Footer .text .links button:active {
+    transform: scale(0.99);
+}
+
+.Footer .text .copyright {
+	position: absolute;
+	width: 22.5%;
+	right: 2.5%;
+	margin-top: 0px;
+	color: white;
+}
+
+.hidden {
+	opacity: 0;
+	transition: opacity 200ms linear;
+}
+
+.none {
+	display: none;
+}
+
+/* slide enter */
+.slide-enter {
+	opacity: 0;
+	transform: scale(0.98) translateY(5px);
+	z-index: 1;
+  }
+  .slide-enter.slide-enter-active {
+	  opacity: 1;
+	  transform: scale(1) translateY(0);
+	  transition: opacity 250ms linear 250ms, transform 250ms ease-in-out 250ms;
+  }
+  
+  /* slide exit */
+  .slide-exit {
+	  opacity: 1;
+	  transform: scale(1) translateY(0);
+	  
+  }
+  .slide-exit.slide-exit-active {
+	  opacity: 0;
+	  transform: scale(0.97) translateY(5px);
+	  transition: opacity 250ms linear, transform 250ms ease-out;
+  }
+  .slide-exit-done {
+	opacity: 0;
+  }
+
+@media screen and (max-width: 860px) {
+
+	.Video h1 {
+		font-size: 40px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.Video .video-container {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.Video .fullscreen {
+		display: none;
+	}
+
+	.Video .volume {
+		width: 15px;
+		margin-left: 5%;
+		visibility: inherit;
+	}
+
+	.Carousel {
+		margin-bottom: 50px;
+	}
+
+	.Carousel .subtitle {
+		font-size: 25px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.Item .img {
+		width: 100%;
+	}
+
+	.Item .device {
+		/* background-color: rgba(255, 255, 255, 0.6); */
+		width: 90%;
+		position: absolute;
+		border: 0px solid black;
+		top: 10%;
+		padding-top: 30px;
+		z-index: 20;
+		font-size: 20px;
+		height: 90%;
+	}
+
+	.Item .device div{
+		border-bottom: 0px solid black;
+	}
+
+	.Item .device h2 {
+		display: none;
+	}
+
+	.Item .device > div p {
+		display: none;
+	}
+
+	.Item .device h1 {
+		color: #eeeeee;
+		margin-bottom: 30px;
+	}
+
+	.Item .device button {
+		background-color: rgba(255, 255, 255, 0.6);
+		margin-bottom: 30px;
+		border-radius: 10px;
+		font-size: 13px;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-weight: bold;
+	}
+
+	.Slide-Show .slide {
+		width: 100%;
+	}
+
+	.Slide-Show .arrow {
+		display: none;
+	}
+
+	.Slide-Show {
+		height: 90vh;
+	}
+
+	.Slide-Show .dots {
+		margin-top: 90vh;
+		margin-bottom: 20px;
+	}
+
+	.Footer .text .links {
+		width: 100%;
+		bottom: 10px;
+		left: 0;
+		font-size: 15px;
+	}
+
+	.Footer .text .copyright {
+		width: 100%;
+		font-size: 13px;
+		bottom: -50px;
+	}
+}
