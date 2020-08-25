@@ -11,13 +11,9 @@ import footer_img from './assets/Footer_Beach.png'
 
 class App extends Component {
 
-	// constructor() {
-	// 	super()
-	
-	// 	this.state = {
-	// 		video: "play"
-	// 	}
-	// }
+	componentDidMount() {
+		document.title = "One Mineral";
+	}
 
 	render() {
 		return (
