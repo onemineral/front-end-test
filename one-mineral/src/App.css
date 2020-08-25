@@ -1,0 +1,333 @@
+.App {
+	position: relative;
+	text-align: center;
+}
+
+/*Video*/
+
+.Video {
+	position: relative;
+}
+
+.Video h1 {
+	margin-top: 50px;
+	margin-bottom: 80px;
+	font-size: 70px;
+	font-family: Tahoma;
+}
+
+.Video .video-container {
+	position: relative;
+	margin-top: 50px;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.Video .video-container-fullscreen {
+	position: relative;
+	margin-top: 50px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.Video .video-screen {
+	position: relative;
+	width: 100%;
+	display:inline-block;
+}
+
+.Video .playButton {
+	position: absolute;
+	width: 20%;
+	left: 40%;
+	top: 35%;
+}
+
+.Video .control-bar {
+	position: absolute;
+	width: 80%;
+	bottom: 5%;
+	left: 10%;
+}
+
+.Video .control-bar-hidden {
+	position: absolute;
+	width: 80%;
+	bottom: 5%;
+	left: 10%;
+	visibility: hidden;
+}
+
+.Video .time_bar {
+	width: 80%;
+	margin-bottom: 5px;
+	visibility: inherit;
+}
+
+.Video .fullscreen {
+	width: 20px;
+	margin-left: 5%;
+	visibility: inherit;
+}
+
+.Video .volume {
+	width: 27px;
+	margin-left: 1.5%;
+	visibility: inherit;
+}
+
+/*Carousel*/
+
+.Carousel {
+	width: 100%;
+	padding-top: 150px;
+	margin-bottom: 50px;
+}
+
+.Carousel .subtitle {
+	font-size: 35px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: 'Lucida Sans';
+	font-weight: lighter;
+}
+
+.Slide-Show {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.Slide-Show .slide {
+	width: 70%;
+}
+
+.Slide-Show .arrow {
+	width: 15%;
+	position: relative;
+}
+
+.Slide-Show .arrow img {
+	position: absolute;
+	height: 42px;
+	top: calc(50% - 21px);
+}
+
+.Slide-Show .dots {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.Item {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.Item img {
+	position: relative;
+	float: left;
+	width: 60%;
+	padding-bottom: 30px;
+	z-index: 20;
+}
+
+.Item .device {
+	width: 40%;
+	position: absolute;
+	border: 1px solid black;
+	right: 15px;
+	bottom: 20px;
+	padding-top: 30px;
+	z-index: 10;
+}
+
+
+.Item .device div{
+	border-bottom: 1px solid black;
+}
+
+.Item .device div * {
+	margin: 20px 5% 50px 5%;
+}
+
+.Item .device h2 {
+	color: green;
+}
+
+.Item .device h1 {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.Item button {
+	border: none;
+    text-decoration: none;
+    background: none;
+	cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/*Footer*/
+
+.Footer {
+	position: relative;
+	width: 100%;
+}
+
+.Footer img {
+	width: 100%;
+}
+
+.Footer .text {
+	position: absolute;
+	width: 100%;
+	bottom: 60px;
+}
+
+.Footer .text .links {
+	position: absolute;
+	width: 50%;
+	left: 25%;
+}
+
+.Footer .text .links button {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	display: inline-block;
+    border: none;
+    text-decoration: none;
+    background: none;
+	cursor: pointer;
+	color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.Footer .text .links button:hover,
+.Footer .text .links button:focus {
+    background: none;
+}
+
+.Footer .text .links button:focus {
+    outline: none;
+}
+
+.Footer .text .links button:active {
+    transform: scale(0.99);
+}
+
+.Footer .text .copyright {
+	position: absolute;
+	width: 22.5%;
+	right: 2.5%;
+	margin-top: 0px;
+	color: white;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.none {
+	display: none;
+}
+
+@media screen and (max-width: 860px) {
+
+	.Video h1 {
+		font-size: 40px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.Video .video-container {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.Video .fullscreen {
+		display: none;
+	}
+
+	.Video .volume {
+		width: 15px;
+		margin-left: 5%;
+		visibility: inherit;
+	}
+
+	.Carousel .subtitle {
+		font-size: 25px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.Item img {
+		width: 100%;
+	}
+
+	.Item .device {
+		/* background-color: rgba(255, 255, 255, 0.6); */
+		width: 90%;
+		position: absolute;
+		border: 0px solid black;
+		top: 10%;
+		padding-top: 30px;
+		z-index: 20;
+		font-size: 20px;
+		height: 90%;
+	}
+
+	.Item .device div{
+		border-bottom: 0px solid black;
+	}
+
+	.Item .device h2 {
+		display: none;
+	}
+
+	.Item .device > div p {
+		display: none;
+	}
+
+	.Item .device h1 {
+		color: #eeeeee;
+		margin-bottom: 30px;
+	}
+
+	.Item .device button {
+		background-color: rgba(255, 255, 255, 0.6);
+		margin-bottom: 30px;
+		border-radius: 10px;
+		font-size: 13px;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-weight: bold;
+	}
+
+	.Slide-Show .slide {
+		width: 100%;
+	}
+
+	.Slide-Show .arrow img {
+		display: none;
+	}
+
+	.Footer .text .links {
+		width: 100%;
+		bottom: 10px;
+		left: 0;
+		font-size: 15px;
+	}
+
+	.Footer .text .copyright {
+		width: 100%;
+		font-size: 13px;
+		bottom: -50px;
+	}
+}
