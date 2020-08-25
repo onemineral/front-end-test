@@ -68,7 +68,7 @@
 	transition: opacity 500ms linear;
 }
 
-.Video .time_bar {
+.Video .time-bar {
 	width: 80%;
 	margin-bottom: 5px;
 	visibility: inherit;
@@ -311,6 +311,10 @@
 		visibility: inherit;
 	}
 
+	.Carousel {
+		margin-bottom: 50px;
+	}
+
 	.Carousel .subtitle {
 		font-size: 25px;
 		margin-left: 10%;
@@ -364,8 +368,17 @@
 		width: 100%;
 	}
 
-	.Slide-Show .arrow img {
+	.Slide-Show .arrow {
 		display: none;
+	}
+
+	.Slide-Show {
+		height: 90vh;
+	}
+
+	.Slide-Show .dots {
+		margin-top: 90vh;
+		margin-bottom: 20px;
 	}
 
 	.Footer .text .links {

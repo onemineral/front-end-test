@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import { CSSTransition } from 'react-transition-group'
-
 //Icons
 import play from './assets/Play.png'
 import pause from './assets/Pause.png'
@@ -24,7 +22,7 @@ class Video extends Component {
             fadeOut: false
         }
     }
-
+    
     videoClick() {
         let prevState = this.state.video
 
@@ -87,7 +85,7 @@ class Video extends Component {
                     <div className={(this.state.hovering && this.state.video !== 'start') ? "control-bar" : "control-bar-hidden"}
                         onMouseOver={() => this.setState({ hovering: true })}
                         onMouseOut={() => this.setState({ hovering: false, fadeOut: true })} >
-                        <img className="time_bar" alt="time_bar" src={time_bar} />
+                        <img className="time-bar" alt="time_bar" src={time_bar} />
                         <img alt="fs_on" src={fs_on}
                             className={(this.state.fullscreen) ? "fullscreen" : "none"}
                             onClick={() => this.toggleFullscreen()} />

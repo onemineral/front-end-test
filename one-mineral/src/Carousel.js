@@ -17,7 +17,6 @@ import dots3 from './assets/Dots3.png'
 
 //Slide Images
 import slide1 from './assets/Coral.png'
-import { CSSTransition } from 'react-transition-group'
 
 class Carousel extends Component {
 
