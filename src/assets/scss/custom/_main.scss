@@ -47,10 +47,6 @@ a {
 main {
   margin: 5vw;
 
-  @media screen and (max-width: 450px) {
-    width: 400px;
-  }
-
   @media screen and (min-width: 1440px) {
     width: 1200px;
     margin-left: auto;
